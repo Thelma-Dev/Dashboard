@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial scale=1.0">
+        <meta name="author" content="Thelma Osifo">
+        <meta name="description" content="Countdown project">
+        <meta name="keywords" content="HTML, CSS, SEO, web, web development">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Dashboard</title>
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/style.css" media="screen">
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container"> 
+                
+                <div class="dashboard">
+                    <div class="profile">
+                        <div class="home">
+                            <p>Hello Tope,</p>
+                            <p>Welcome</p>
+                            <p>Back</p>
+                        </div>
+                        <div class="total loans">
+                            <div class="icon loan"><i class="fa-solid fa-coins"></i></div>
+                            <span>Total Loan</span>
+                            <div class="data-loan">&#8358; 0</div>
+                        </div>
+                        <div class="total savings">
+                            <div class="icon save"><i class="fa-solid fa-seedling"></i></div>
+                            <span class="number">&#8358; 50,000</span>
+                            <div class="data">Total Savings</div>
+                        </div>
+                        <div class="total users">
+                            <div class="icon user"><i class="fa-solid fa-user-group"></i></div>
+                            <span class="number1">0</span>
+                            <div class="data">Total Users</div>
+                        </div>
+                    </div>
+
+                    <div class="analytics">
+                        <div class="loan-request">
+                            <h2>Loan Requests</h2>
+
+                            <table class="table">
+                                <thead> 
+                                    <tr>
+                                        <th>Borrower</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th colspan="1"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="column">
+                                        <td>George Adesa</td>
+                                        <td class="money">&#8358; 800,000</td>
+                                        <td><div class="status pending">Pending</div></td>
+                                        <td><a href="#">View loan</a></td>
+                                    </tr>
+                                    <tr class="column">
+                                        <td>Rachel Okoro</td>
+                                        <td class="money">&#8358; 500,000</td>
+                                        <td><div class="status rejected">Rejected</div></td>
+                                        <td><a href="#">View loan</a></td>
+                                    </tr>
+                                    <tr class="column">
+                                        <td>Hakim Shuaib</td>
+                                        <td class="money">&#8358; 40,000</td>
+                                        <td><div class="status approved">Approved</div></td>
+                                        <td><a href="#">View loan</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="line-graph">
+                            <h2>Monthly Savings</h2>
+                            <div id="graph"></div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="insight">
+                        <div class="wallet">
+                            <div class="box balance">
+                                <div class="input">&#8358; 125K</div>
+                                <div class="data">Wallet Balance</div>
+                            </div>
+                            <div class="box account">
+                                <div class="input">0002769009</div>
+                                <div class="data">Account number</div>
+                            </div>
+                            <div class="box payment">
+                                <div class="input">payments.topee.lend... <i class="fa-regular fa-copy"></i></div>
+                                <div class="data">Payment link</div>
+                            </div>
+                        </div>
+                        <div class="general">
+                            <h2>General <i class="fa-solid fa-angle-down"></i></h2>
+                            <div class="shortcut">
+                                <div class="icon"><i class="fa-regular fa-user"></i></div>
+                                <div class="title">Profile</div>
+                            </div>
+
+                            <div class="shortcut">
+                                <div class="icon"><i class="fa-solid fa-headset"></i></div>
+                                <div class="title">Support channel</div>
+                            </div>
+
+                            <div class="shortcut">
+                                <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                                <div class="title">Referral</div>
+                            </div>
+
+                            <div class="shortcut">
+                                <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                                <div class="title">Two-factor authentication</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

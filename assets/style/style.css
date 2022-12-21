@@ -1,0 +1,393 @@
+@import './reset.css';
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-green:#34a65f;
+    --app-light-green: #b0d8b0;
+    --app-light-bg: rgba(221, 221, 221, 0.5);
+    --app-blue:#174978;
+    --app-blue-:#3366cc;
+    --app-dark-blue: #012549;
+    --border-radius: 10px;
+}
+
+body {
+    background-color: var(--app-light-bg);
+    overflow: hidden;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+main {
+    padding: 30px 0;
+}
+
+h2 {
+    color: var(--app-dark-blue);
+    font-weight: 500;
+}
+
+/* ----------------------------------- */
+/*           Dashboard                 */
+/* ----------------------------------- */
+
+.dashboard {
+    width: 100%;
+    height: 580px;
+    background-color: transparent;
+    margin-inline: auto;
+    margin-top: 5px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/* ----------------------------------- */
+/*           Profile                   */
+/* ----------------------------------- */
+
+.profile, .analytics, .insight {
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    height: 340px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--app-blue);
+    text-align: left;
+    border-radius: var(--border-radius);
+}
+
+.home >p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.home >p + p {
+    color: var(--app-light-green);
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Specifically Profile icon */
+.icon {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.total {
+    width: 250px;
+    height: 90px;
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(168, 241, 168, 0.4);
+    border-radius: var(--border-radius);
+}
+
+.loans {
+    position: absolute;
+    z-index: 222;
+    top: 41%;
+    left: 13%;
+    background-color: #46769B;
+    width: 220px;
+    height: 105px;
+}
+
+.loans span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 32%;
+}
+
+.savings, .users {
+    margin-top: 15px;
+}
+
+.users {
+    background-color: #fff;
+}
+
+/* ----------------------------------- */
+/*          Analytics                  */
+/* ----------------------------------- */
+
+.loan-request, .wallet {
+    width: 450px;
+    height: 270px;
+    padding: 20px 15px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.line-graph, .general {
+    width: 450px;
+    height: 290px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+/* Styling loan Request */
+.table {
+    width: 100%;
+}
+
+.column {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse:separate;
+    border-spacing: 0 5px;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(61, 60, 60);
+}
+
+.money, th {
+    color: var(--app-dark-blue);
+    font-weight: 400;
+}
+
+th {
+    background-color: rgb(126, 126, 126, 0.1);
+}
+
+.status {
+    border: none;
+    height: 28px;
+    padding: 2px;
+    border-radius: 25px;
+    background-color: rgb(176, 216, 176, 0.5);
+    text-align: center;
+}
+
+.approved {
+    color: #0c700c;
+}
+
+.pending {
+    color: rgba(209, 172, 8, 0.8);
+    background-color: rgb(255, 230, 0, 0.25);
+}
+
+.rejected {
+    color: rgb(243, 78, 106);
+    background-color: rgb(255, 192, 203, 0.4);
+}
+
+a {
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+
+/* ----------------------------------- */
+/*          Insight                    */
+/* ----------------------------------- */
+
+.wallet {
+    width: 308px;
+    height: 260px;
+    background-color: #fff;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general {
+    width: 308px;
+    height: 280px;
+    padding: 20px 15px;
+}
+
+/* Icons */
+.icon {
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 0;
+}
+
+.icon.loan, .general .icon {
+    margin-left: 0;
+    margin-top: 2px;
+    background-color: #fff;
+}
+
+.loan i {
+    color: var(--app-dark-blue);
+    font-size: 14px;
+}
+
+.save i {
+    color: #75ba75;
+    font-size: 14px;
+}
+
+.icon.save {
+    background-color: #fff;
+}
+
+.icon.user {
+    background-color: rgb(70, 118, 155, 0.2);
+}
+
+.user i, .shortcut i {
+    color: var(--app-blue-);
+    font-size: 14px;
+}
+
+.number, .number1 {
+    position: absolute;
+    top: 65%;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--app-dark-blue);
+}
+
+.number1 {
+    top: 81%;
+}
+
+.data, .data-loan {
+    margin-left: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--app-dark-blue);
+}
+
+.data-loan {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.general .icon p {
+    text-align: right;
+}
+
+
+/* Styling general */
+
+.shortcut {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.shortcut i {
+    font-size: 16px;
+}
+
+.title {
+    padding: 5px 8px;
+    font-weight: 400;
+}
+
+/* Styling wallet */
+
+.box {
+    border: none;
+    border-radius: var(--border-radius);
+    margin-top: 5px;
+    padding: 8px 15px;
+    color: var(--app-dark-blue);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.box .data {
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-top: 5px;
+}
+
+.balance {
+    margin-top: 0px;
+    background-color: var(--app-blue-);
+    color: #fff;
+}
+
+.balance .data {
+    color: #fff;
+}
+
+/* .box select {
+    width: 90px;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    justify-content: space-between;
+    outline: none;
+    background: none;
+    font-size: 16px;
+} */
+
+/* button {
+    width: 150px;
+    height: 46px;
+    text-align: center;
+    background-color: var(--app-red);
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--app-red-hover);
+} */
+
+/* .set {
+    background-color: var(--app-blue);
+}
+
+.set:hover {
+    background-color: var(--app-blue-hover);
+} */
