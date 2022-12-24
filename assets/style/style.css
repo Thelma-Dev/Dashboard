@@ -45,6 +45,7 @@ h2 {
     border: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -216,6 +217,10 @@ a {
     color: #8b8b8b;
 }
 
+a:hover {
+    color: #5f5f5f;
+}
+
 
 /* ----------------------------------- */
 /*          Insight                    */
@@ -352,42 +357,84 @@ a {
     color: #fff;
 }
 
-/* .box select {
-    width: 90px;
-    height: 40px;
-    padding: 0 5px;
-    border: 1px solid rgb(0, 0, 0, 0.4);
-    justify-content: space-between;
-    outline: none;
-    background: none;
-    font-size: 16px;
-} */
+/* ----------------------------------- */
+/*          Media queries             */
+/* --------------------------------- */
 
-/* button {
-    width: 150px;
-    height: 46px;
-    text-align: center;
-    background-color: var(--app-red);
-    border: none;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-    transition: all 0.25s ease-in-out;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 20px;
+/* 500px and down */
+@media (max-width: 500px) {
+    
+    body{
+        overflow: auto;
+    }
+
+    .dashboard {
+        padding: 14px 10px;
+        height: 100%;
+    }
+
+    .profile, .analytics, .insight {
+        margin-inline: auto;
+    }
+
+    .profile, .insight {
+        width: 400px;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .analytics {
+        width: 400px;
+        height: 100%;
+        padding: 10px 0px
+    }
+
+    .home, .savings, .users {
+        width: 280px;
+        margin-inline: auto;
+    }
+
+    .loans {
+        top: 45%;
+        left: 21.5%;
+        width: 250px;
+        height: 105px;
+    }
+    
+    .loans span {
+        top: 15px;
+        right: 39%;
+    }
+
+    .number {
+        top: 67.5%;
+    }
+    
+    .number1 {
+        top: 84%;
+    }
+
+    .wallet, .general {
+        width: 310px;
+        margin-inline: auto;
+    }
+
+    .line-graph {
+        margin-inline: auto;
+        width: 360px;
+        padding: 10px 20px;
+    }
+
+    .loan-request {
+        width: 360px;
+        margin-inline: auto;
+    }
+
+    td, th {
+        font-size: 11px;
+    }
+
+    .status {
+        padding: 5px;
+    }
 }
-
-button:hover {
-    background-color: var(--app-red-hover);
-} */
-
-/* .set {
-    background-color: var(--app-blue);
-}
-
-.set:hover {
-    background-color: var(--app-blue-hover);
-} */
