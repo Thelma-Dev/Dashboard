@@ -352,6 +352,10 @@ a:hover {
     font-weight: 400;
 }
 
+.box.account .input {
+    color: var(--app-dark-blue);
+}
+
 .box .data {
     font-size: 12px;
     color: #8b8b8b;
@@ -382,6 +386,7 @@ a:hover {
     .dashboard {
         padding: 14px 10px;
         height: 100%;
+        gap: 5px;
     }
 
     .profile, .analytics, .insight {
@@ -408,6 +413,7 @@ a:hover {
     }
 
     .home {
+        height: 390px;
         padding: 15px 18px;
     }
 
@@ -424,17 +430,21 @@ a:hover {
     .home .loans {
         width: 325px;
         height: 115px;
-        margin-top: 85px;
+        margin-top: 136px;
     }
     
     .home .loans span {
-        top: 66.5%;
+        top: 71%;
         right: 53%;
     }
 
     .number, .number1 {
         font-size: 27px;
         top: 16%;
+    }
+
+    .number {
+        top: 14%;
     }
 
     .wallet, .general {
