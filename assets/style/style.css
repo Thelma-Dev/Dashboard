@@ -63,7 +63,7 @@ h2 {
     z-index: 1;
     width: 250px;
     height: 340px;
-    padding: 10px 20px;
+    padding: 15px;
     border: none;
     background-color: var(--app-blue);
     text-align: left;
@@ -81,10 +81,34 @@ h2 {
     font-size: 30px;
     line-height: 28px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
-/* Specifically Profile icon */
+.home .loans {
+    /* position: absolute;
+    z-index: 222;
+    top: 41%;
+    left: 13%; */
+    margin-top: 95px;
+    background-color: #46769B;
+    width: 220px;
+    height: 110px;
+}
+
+.home .loans span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 69%;
+    right: 34%;
+}
+
+/* ----------------------------------- */
+/*           Profile Icon             */
+/* --------------------------------- */
+
 .icon {
     width: 80px;
     height: 80px;
@@ -103,28 +127,9 @@ h2 {
     border-radius: var(--border-radius);
 }
 
-.loans {
-    position: absolute;
-    z-index: 222;
-    top: 41%;
-    left: 13%;
-    background-color: #46769B;
-    width: 220px;
-    height: 105px;
-}
-
-.loans span {
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    text-align: right;
-    position: absolute;
-    top: 15px;
-    right: 32%;
-}
-
 .savings, .users {
-    margin-top: 15px;
+    margin-top: 5px;
+    position: relative;
 }
 
 .users {
@@ -154,7 +159,10 @@ h2 {
     border: none;
 }
 
-/* Styling loan Request */
+/* ----------------------------------- */
+/*          Loan Request              */
+/* --------------------------------- */
+
 .table {
     width: 100%;
 }
@@ -237,11 +245,14 @@ a:hover {
 
 .general {
     width: 308px;
-    height: 280px;
+    height: 300px;
     padding: 20px 15px;
 }
 
-/* Icons */
+/* ----------------------------------- */
+/*             icons                   */
+/* ----------------------------------- */
+
 .icon {
     border-radius: 50%;
     border: none;
@@ -283,18 +294,15 @@ a:hover {
 
 .number, .number1 {
     position: absolute;
-    top: 65%;
+    top: 14%;
     font-size: 25px;
     font-weight: 600;
     color: var(--app-dark-blue);
 }
 
-.number1 {
-    top: 81%;
-}
-
 .data, .data-loan {
     margin-left: 0;
+    margin-top: 3px;
     font-size: 14px;
     font-weight: 400;
     color: var(--app-dark-blue);
@@ -307,12 +315,13 @@ a:hover {
     font-weight: 600;
 }
 
+/* ----------------------------------- */
+/*            General                  */
+/* ----------------------------------- */
+
 .general .icon p {
     text-align: right;
 }
-
-
-/* Styling general */
 
 .shortcut {
     display: flex;
@@ -329,7 +338,9 @@ a:hover {
     font-weight: 400;
 }
 
-/* Styling wallet */
+/* ----------------------------------- */
+/*             Wallet                  */
+/* ----------------------------------- */
 
 .box {
     border: none;
@@ -375,6 +386,7 @@ a:hover {
 
     .profile, .analytics, .insight {
         margin-inline: auto;
+        border: none;
     }
 
     .profile, .insight {
@@ -390,39 +402,54 @@ a:hover {
     }
 
     .home, .savings, .users {
-        width: 280px;
+        width: 360px;
         margin-inline: auto;
+        padding: 15px 18px;
     }
 
-    .loans {
-        top: 45%;
-        left: 21.5%;
-        width: 250px;
-        height: 105px;
-    }
-    
-    .loans span {
-        top: 15px;
-        right: 39%;
+    .home {
+        padding: 15px 18px;
     }
 
-    .number {
-        top: 67.5%;
+    .home >p {
+        font-size: 16px;
+        font-weight: 400;
     }
     
-    .number1 {
-        top: 84%;
+    .home >p + p {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    .home .loans {
+        width: 325px;
+        height: 115px;
+        margin-top: 85px;
+    }
+    
+    .home .loans span {
+        top: 66.5%;
+        right: 53%;
+    }
+
+    .number, .number1 {
+        font-size: 27px;
+        top: 16%;
     }
 
     .wallet, .general {
-        width: 310px;
+        width: 360px;
         margin-inline: auto;
+    }
+
+    .general {
+        height: 270px;
     }
 
     .line-graph {
         margin-inline: auto;
         width: 360px;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .loan-request {
@@ -436,5 +463,13 @@ a:hover {
 
     .status {
         padding: 5px;
+    }
+
+    .total {
+        height: 105px;
+    }
+
+    .data {
+        margin-top: 10px;
     }
 }
