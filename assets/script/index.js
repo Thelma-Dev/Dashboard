@@ -33,7 +33,7 @@ function drawChart() {
 
     let options = {
       tooltip: {isHtml: true},
-      legend: 'none'
+      legend: 'none',
     };
 
     let chart = new google.visualization.BarChart(valueGraph);
@@ -41,6 +41,12 @@ function drawChart() {
 }
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
+
+// function resize() {
+//   let chart = new google.visualization.BarChart(valueGraph);
+//     chart.draw(dataTable, options.Width = 360);   
+// }
+// window.onresize = resize();
 
 valueGraph.style.fontFamily = 'Poppins';
 
